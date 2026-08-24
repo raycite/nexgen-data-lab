@@ -23,4 +23,66 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+@keyframes project-light-sweep {
+  0%, 18% { transform: translateX(-120%) rotate(12deg); opacity: 0; }
+  28% { opacity: 1; }
+  58%, 100% { transform: translateX(650%) rotate(12deg); opacity: 0; }
+}
+
+.project-light-sweep {
+  animation: project-light-sweep 5.5s ease-in-out infinite;
+}
+
+@keyframes route-enter {
+  from { opacity: 0; transform: translateY(7px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.route-transition {
+  animation: route-enter 280ms ease-out both;
+}
+
+@keyframes loading-node-pulse {
+  0%, 100% { opacity: .3; transform: scale(.7); box-shadow: 0 0 0 rgba(18, 100, 232, 0); }
+  50% { opacity: 1; transform: scale(1.25); box-shadow: 0 0 18px rgba(18, 100, 232, .45); }
+}
+
+@keyframes loading-progress {
+  from { transform: translateX(-110%); }
+  to { transform: translateX(210%); }
+}
+
+.loading-data-node {
+  animation: loading-node-pulse 1.6s ease-in-out infinite;
+}
+
+.loading-progress {
+  animation: loading-progress 1.25s ease-in-out infinite;
+}
+
+:where(a, button, input, select, textarea):focus-visible {
+  outline: 3px solid #ff6500;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .project-light-sweep,
+  .route-transition,
+  .loading-data-node,
+  .loading-progress {
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
+  }
 }
