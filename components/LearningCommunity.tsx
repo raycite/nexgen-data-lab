@@ -134,15 +134,15 @@ export default function LearningCommunity() {
       <div className="grid lg:grid-cols-2">
 
         {/* LEFT SIDE */}
-        <div className="bg-[#00102B] px-4 py-8 text-white sm:px-8 sm:py-10 lg:px-14 lg:py-8">
+        <div className="editorial-grid bg-[#0A2340] px-4 py-12 text-white sm:px-8 sm:py-14 lg:px-14">
           <div className="mx-auto max-w-xl">
 
-            <p className="text-xs font-semibold uppercase tracking-wide text-[#168BFF]">
+            <p className="eyebrow text-[#6EB4FF]">
               Learn with NexGen
             </p>
 
-            <h2 className="mt-2 text-2xl font-bold leading-tight sm:text-3xl lg:text-[26px]">
-              Skills for the future
+            <h2 className="mt-4 text-4xl leading-tight sm:text-5xl">
+              Skills you can put to work.
             </h2>
 
             {/* Icons */}
@@ -208,16 +208,16 @@ export default function LearningCommunity() {
         {/* RIGHT SIDE */}
         <div
           id="community"
-          className="scroll-mt-16 border-slate-200 bg-[#F8FAFC] px-4 py-8 sm:px-8 sm:py-10 lg:border-l lg:px-14 lg:py-8"
+          className="editorial-grid scroll-mt-16 border-[#071A2D]/15 bg-[#F4F0E7] px-4 py-12 sm:px-8 sm:py-14 lg:border-l lg:px-14"
         >
           <div className="mx-auto max-w-2xl">
 
-            <p className="text-xs font-semibold uppercase tracking-wide text-[#1264E8]">
+            <p className="eyebrow text-[#1168D9]">
               Grow with the Community
             </p>
 
-            <h2 className="mt-2 text-2xl font-bold leading-tight text-slate-900 sm:text-3xl lg:text-[26px]">
-              Events, mentorship and more
+            <h2 className="mt-4 text-4xl leading-tight text-[#071A2D] sm:text-5xl">
+              Progress is a community practice.
             </h2>
 
             <div className="mt-7 grid gap-6 sm:grid-cols-3 sm:gap-5">

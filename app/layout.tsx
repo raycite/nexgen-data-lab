@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Bricolage_Grotesque, Newsreader } from "next/font/google";
 import RouteTransition from "@/components/RouteTransition";
 import { getSiteUrl, siteDescription, siteName } from "@/lib/site";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const bricolage = Bricolage_Grotesque({
+  variable: "--font-bricolage",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const newsreader = Newsreader({
+  variable: "--font-newsreader",
   subsets: ["latin"],
 });
 
@@ -58,7 +58,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${bricolage.variable} ${newsreader.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <a href="#main-content" className="fixed left-4 top-3 z-[100] -translate-y-20 rounded-lg bg-white px-4 py-3 font-semibold text-[#00102B] shadow-xl transition focus:translate-y-0">Skip to main content</a>

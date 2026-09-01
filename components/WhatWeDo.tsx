@@ -14,9 +14,7 @@ export default function WhatWeDo() {
       link: "Explore Learning →",
       href: "/programs",
       icon: GraduationCap,
-      iconColor: "text-[#168BFF]",
-      iconBg: "bg-blue-50",
-      linkColor: "text-[#168BFF]",
+      iconColor: "text-[#1168D9]",
     },
     {
       title: "Research",
@@ -25,9 +23,7 @@ export default function WhatWeDo() {
       link: "Explore Research →",
       href: "/datasets",
       icon: Search,
-      iconColor: "text-[#FF6500]",
-      iconBg: "bg-orange-50",
-      linkColor: "text-[#FF6500]",
+      iconColor: "text-[#FF5C1A]",
     },
     {
       title: "Build",
@@ -36,9 +32,7 @@ export default function WhatWeDo() {
       link: "See Projects →",
       href: "/projects",
       icon: Code2,
-      iconColor: "text-[#168BFF]",
-      iconBg: "bg-blue-50",
-      linkColor: "text-[#168BFF]",
+      iconColor: "text-[#1168D9]",
     },
     {
       title: "Connect",
@@ -47,40 +41,39 @@ export default function WhatWeDo() {
       link: "Join the Community →",
       href: "#community",
       icon: UsersRound,
-      iconColor: "text-[#FF6500]",
-      iconBg: "bg-orange-50",
-      linkColor: "text-[#FF6500]",
+      iconColor: "text-[#FF5C1A]",
     },
   ];
 
   return (
-    <section id="about" className="scroll-mt-16 bg-white py-10 sm:py-12">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section id="about" className="editorial-grid scroll-mt-16 border-b border-[#071A2D]/10 bg-[#F4F0E7] py-14 sm:py-16">
+      <div className="mx-auto max-w-[90rem] px-4 sm:px-6 lg:px-10">
 
         {/* Heading */}
-        <div className="text-center">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#168BFF]">
+        <div className="grid gap-5 border-b border-[#071A2D]/20 pb-8 lg:grid-cols-[.7fr_1.3fr] lg:items-end">
+          <p className="eyebrow text-[#1168D9]">
             What We Do
           </p>
 
-          <h2 className="mx-auto mt-2 max-w-3xl text-2xl font-bold text-slate-900 sm:text-3xl">
-            Building skills. Advancing research. Creating impact.
+          <h2 className="max-w-4xl text-4xl leading-[1.02] text-[#071A2D] sm:text-5xl lg:text-6xl">
+            Learn deeply. Test ideas. <span className="italic text-[#1168D9]">Build what matters.</span>
           </h2>
 
         </div>
 
         {/* Cards */}
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
-          {items.map((item) => {
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4">
+          {items.map((item, index) => {
             const Icon = item.icon;
 
             return (
-              <div
+              <article
                 key={item.title}
-                className="group rounded-2xl border border-slate-200 bg-white p-5 text-center shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+                className="group relative border-b border-[#071A2D]/15 px-0 py-8 sm:px-6 lg:border-b-0 lg:border-r lg:px-7 lg:py-10 first:pl-0 last:border-r-0"
               >
+                <span className="absolute right-5 top-5 font-mono text-[10px] tracking-[.15em] text-[#071A2D]/35">0{index + 1}</span>
                 <div
-                  className={`mx-auto flex h-14 w-14 items-center justify-center rounded-full ${item.iconBg}`}
+                  className="flex h-12 w-12 items-center justify-center border border-[#071A2D]/15 bg-[#FFFDF8] transition-transform duration-500 group-hover:-rotate-6 group-hover:scale-110"
                 >
                   <Icon
                     size={28}
@@ -89,21 +82,21 @@ export default function WhatWeDo() {
                   />
                 </div>
 
-                <h3 className="mt-4 text-xl font-bold text-slate-900">
+                <h3 className="font-display mt-8 text-3xl text-[#071A2D]">
                   {item.title}
                 </h3>
 
-                <p className="mt-3 text-sm leading-6 text-slate-600">
+                <p className="mt-3 min-h-24 text-sm leading-6 text-[#405064]">
                   {item.description}
                 </p>
 
                 <a
                   href={item.href}
-                  className={`mt-4 inline-flex items-center text-sm font-semibold transition hover:opacity-80 ${item.linkColor}`}
+                  className="mt-5 inline-flex items-center border-b border-[#071A2D] pb-1 text-xs font-bold uppercase tracking-[.1em] text-[#071A2D] transition hover:border-[#FF5C1A] hover:text-[#FF5C1A]"
                 >
                   {item.link}
                 </a>
-              </div>
+              </article>
             );
           })}
         </div>

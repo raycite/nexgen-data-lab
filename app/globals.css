@@ -1,29 +1,73 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --ink: #071a2d;
+  --ink-deep: #03111f;
+  --paper: #f4f0e7;
+  --paper-bright: #fffdf8;
+  --signal: #ff5c1a;
+  --cobalt: #1168d9;
+  --mint: #9dd9c5;
+  --line: rgba(7, 26, 45, 0.16);
+  --background: var(--paper-bright);
+  --foreground: var(--ink);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-bricolage);
+  --font-serif: var(--font-newsreader);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-bricolage), sans-serif;
   overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  content: "";
+  opacity: .035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.8'/%3E%3C/svg%3E");
+}
+
+h1, h2, .font-display {
+  font-family: var(--font-newsreader), Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -.035em;
+}
+
+::selection { background: var(--signal); color: white; }
+
+.editorial-grid {
+  background-image:
+    linear-gradient(rgba(17,104,217,.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(17,104,217,.055) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: .65rem;
+  font-size: .7rem;
+  font-weight: 750;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.eyebrow::before {
+  width: 1.6rem;
+  height: 2px;
+  content: "";
+  background: currentColor;
 }
 
 html {
@@ -42,13 +86,27 @@ html {
 }
 
 @keyframes route-enter {
-  from { opacity: 0; transform: translateY(7px); }
+  from { opacity: 0; transform: translateY(14px); filter: blur(3px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
 .route-transition {
-  animation: route-enter 280ms ease-out both;
+  animation: route-enter 520ms cubic-bezier(.16,1,.3,1) both;
 }
+
+@keyframes reveal-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.reveal-1, .reveal-2, .reveal-3, .reveal-4 {
+  opacity: 0;
+  animation: reveal-up .75s cubic-bezier(.16,1,.3,1) forwards;
+}
+.reveal-1 { animation-delay: .08s; }
+.reveal-2 { animation-delay: .18s; }
+.reveal-3 { animation-delay: .3s; }
+.reveal-4 { animation-delay: .42s; }
 
 @keyframes loading-node-pulse {
   0%, 100% { opacity: .3; transform: scale(.7); box-shadow: 0 0 0 rgba(18, 100, 232, 0); }
@@ -69,7 +127,7 @@ html {
 }
 
 :where(a, button, input, select, textarea):focus-visible {
-  outline: 3px solid #ff6500;
+  outline: 3px solid var(--signal);
   outline-offset: 3px;
 }
 
@@ -85,4 +143,6 @@ html {
     animation-duration: 0s !important;
     animation-delay: 0s !important;
   }
+
+  .reveal-1, .reveal-2, .reveal-3, .reveal-4 { opacity: 1; animation: none !important; }
 }

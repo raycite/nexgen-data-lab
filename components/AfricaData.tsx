@@ -5,7 +5,7 @@ export default function AfricaData() {
   return (
     <section
       id="research"
-      className="scroll-mt-16 overflow-hidden bg-gradient-to-br from-[#F4F8FF] via-white to-[#EEF5FF] py-10 sm:py-12 lg:py-8"
+      className="editorial-grid scroll-mt-16 overflow-hidden bg-[#FFFDF8] py-14 sm:py-16"
     >
       <style>{`
         @keyframes map-float {
@@ -61,32 +61,30 @@ export default function AfricaData() {
         }
       `}</style>
 
-      <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-[0.8fr_1.2fr] lg:gap-8 lg:px-8">
+      <div className="mx-auto grid max-w-[90rem] items-center gap-10 px-4 sm:px-6 lg:grid-cols-[0.72fr_1.28fr] lg:gap-12 lg:px-10">
         {/* Left content */}
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#168BFF]">
+          <p className="eyebrow text-[#1168D9]">
             Our Focus
           </p>
 
-          <h2 className="mt-2 max-w-lg text-3xl font-bold leading-tight text-slate-900 sm:text-4xl lg:text-3xl">
-            Building Better
-            <br />
-            Data for Africa
+          <h2 className="mt-5 max-w-lg text-4xl leading-[1.02] text-[#071A2D] sm:text-5xl lg:text-6xl">
+            Data shaped by <span className="italic text-[#1168D9]">context,</span> not assumption.
           </h2>
 
-          <p className="mt-4 max-w-lg text-sm leading-6 text-slate-600">
+          <p className="mt-6 max-w-lg border-l-2 border-[#FF5C1A] pl-5 text-sm leading-7 text-[#405064]">
             Many AI systems are trained on data that does not fully represent
             African people, languages, environments, and realities.
           </p>
 
-          <p className="mt-3 max-w-lg text-sm leading-6 text-slate-600">
+          <p className="mt-3 max-w-lg pl-[22px] text-sm leading-7 text-[#405064]">
             We develop datasets that reflect African communities and support
             fairer, more inclusive AI research.
           </p>
 
           <a
             href="/datasets"
-            className="mt-5 inline-flex items-center rounded-lg bg-[#1264E8] px-5 py-2.5 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#0E55C7] hover:shadow-lg"
+            className="mt-6 inline-flex items-center border border-[#071A2D] bg-[#1168D9] px-5 py-3 text-sm font-bold text-white shadow-[4px_4px_0_#071A2D] transition hover:translate-x-1 hover:translate-y-1 hover:shadow-none"
           >
             Explore Data Hub →
           </a>
@@ -152,7 +150,7 @@ export default function AfricaData() {
           </div>
 
           {/* Dataset card */}
-          <div className="africa-info-card relative z-10 flex items-start gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3 shadow-lg lg:absolute lg:left-0 lg:top-4">
+          <div className="africa-info-card relative z-10 flex items-start gap-3 border border-[#071A2D]/20 bg-[#FFFDF8] px-4 py-3 shadow-[5px_5px_0_rgba(7,26,45,.12)] lg:absolute lg:left-0 lg:top-4">
             <Database
               className="mt-1 text-[#1264E8]"
               size={30}
@@ -176,7 +174,7 @@ export default function AfricaData() {
 
           {/* Domains card */}
           <div
-            className="africa-info-card relative z-10 flex items-start gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3 shadow-lg lg:absolute lg:right-0 lg:top-16"
+            className="africa-info-card relative z-10 flex items-start gap-3 border border-[#071A2D]/20 bg-[#FFFDF8] px-4 py-3 shadow-[5px_5px_0_rgba(7,26,45,.12)] lg:absolute lg:right-0 lg:top-16"
             style={{ animationDelay: "0.8s" }}
           >
             <Globe2
@@ -198,7 +196,7 @@ export default function AfricaData() {
 
           {/* Community card */}
           <div
-            className="africa-info-card relative z-10 flex items-start gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3 shadow-lg sm:col-span-1 lg:absolute lg:bottom-2 lg:left-8"
+            className="africa-info-card relative z-10 flex items-start gap-3 border border-[#071A2D]/20 bg-[#FFFDF8] px-4 py-3 shadow-[5px_5px_0_rgba(7,26,45,.12)] sm:col-span-1 lg:absolute lg:bottom-2 lg:left-8"
             style={{ animationDelay: "1.5s" }}
           >
             <Users

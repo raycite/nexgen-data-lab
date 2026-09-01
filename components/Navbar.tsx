@@ -50,11 +50,11 @@ export default function Navbar() {
     <header
       className={`sticky top-0 z-50 w-full transition-all duration-500 ${
         pastHero
-          ? "border-b border-white/10 bg-[#00102B] shadow-md"
-          : "border-b border-slate-200 bg-white"
+          ? "border-b border-white/10 bg-[#03111F]/95 shadow-[0_12px_40px_rgba(3,17,31,.18)] backdrop-blur-xl"
+          : "border-b border-[#071A2D]/10 bg-[#FFFDF8]/95 backdrop-blur-xl"
       }`}
     >
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-[4.5rem] max-w-[90rem] items-center justify-between px-4 sm:px-6 lg:px-10">
 
         {/* Logo */}
         <Link
@@ -101,21 +101,21 @@ export default function Navbar() {
 
         {/* Navigation */}
         <nav
-          className={`hidden items-center gap-8 text-sm font-medium transition-colors duration-500 lg:flex ${
+          className={`hidden items-center gap-1 text-[13px] font-semibold transition-colors duration-500 lg:flex ${
             pastHero ? "text-white" : "text-slate-800"
           }`}
         >
           {navigation.map((item) => (
-            <Link key={item.href} href={item.href} className="transition-colors hover:text-[#FF6500]">{item.label}</Link>
+            <Link key={item.href} href={item.href} className="relative px-3 py-2 transition-colors after:absolute after:inset-x-3 after:bottom-0 after:h-px after:origin-left after:scale-x-0 after:bg-[#FF5C1A] after:transition-transform hover:text-[#FF5C1A] hover:after:scale-x-100">{item.label}</Link>
           ))}
         </nav>
 
         {/* CTA */}
         <Link
           href="/join"
-          className="hidden rounded-full bg-[#FF6500] px-6 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-[#E85B00] hover:shadow-lg lg:inline-flex"
+          className="group hidden items-center gap-3 border border-[#071A2D] bg-[#FF5C1A] px-5 py-2.5 text-sm font-bold text-[#071A2D] shadow-[4px_4px_0_#071A2D] transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none lg:inline-flex"
         >
-          Join Us
+          Join Us <span className="transition-transform group-hover:translate-x-1">↗</span>
         </Link>
 
         <button

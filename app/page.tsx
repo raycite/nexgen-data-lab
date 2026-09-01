@@ -12,7 +12,7 @@ export const metadata: Metadata = { alternates: { canonical: "/" } };
 
 export default function Home() {
   return (
-    <main id="main-content" className="min-h-screen bg-white text-slate-900">
+    <main id="main-content" className="min-h-screen bg-[#FFFDF8] text-[#071A2D]">
       <Navbar />
       <Hero />
       <WhatWeDo />

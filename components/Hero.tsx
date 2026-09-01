@@ -59,7 +59,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative overflow-hidden bg-[#00102B]"
+      className="editorial-grid relative overflow-hidden bg-[#03111F]"
     >
       <style>{`
         @keyframes hero-float {
@@ -151,16 +151,17 @@ export default function Hero() {
         }
       `}</style>
 
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_75%_45%,rgba(0,112,255,.13),transparent_38%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_76%_44%,rgba(17,104,217,.22),transparent_36%),radial-gradient(circle_at_8%_92%,rgba(255,92,26,.12),transparent_28%)]" />
+      <div className="pointer-events-none absolute inset-y-0 left-[7%] w-px bg-white/10" />
 
-      <div className="mx-auto grid max-w-7xl items-center gap-8 px-4 py-10 sm:px-6 sm:py-12 lg:min-h-[590px] lg:grid-cols-[0.82fr_1.18fr] lg:gap-10 lg:px-8">
+      <div className="mx-auto grid max-w-[90rem] items-center gap-8 px-4 py-12 sm:px-6 sm:py-14 lg:min-h-[630px] lg:grid-cols-[0.86fr_1.14fr] lg:gap-8 lg:px-10">
         {/* Left content */}
         <div className="relative z-10 max-w-xl">
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.14em] text-[#168BFF] sm:text-sm sm:tracking-[0.16em]">
+          <p className="eyebrow reveal-1 mb-5 text-[#6EB4FF]">
             Africa&apos;s Data &amp; AI Community
           </p>
 
-          <h1 className="text-[2.45rem] font-bold leading-[1.08] text-white min-[420px]:text-4xl sm:text-5xl lg:text-[58px]">
+          <h1 className="reveal-2 text-[3rem] leading-[.96] text-[#FFFDF8] min-[420px]:text-5xl sm:text-6xl lg:text-[72px]">
             Learn. Build.
             <br />
             Shape Africa&apos;s
@@ -175,20 +176,21 @@ export default function Hero() {
             </span>
           </h1>
 
-          {/* Preserves the previous paragraph spacing */}
-          <div aria-hidden="true" className="h-8 sm:h-12 lg:h-[72px]" />
+          <p className="reveal-3 mt-6 max-w-lg border-l border-[#FF5C1A] pl-4 text-sm leading-7 text-slate-300 sm:text-base">
+            A working community for curious minds—learning the mathematics, code and research practice needed to build technology that understands Africa.
+          </p>
 
-          <div className="flex flex-col gap-3 min-[420px]:flex-row min-[420px]:flex-wrap sm:gap-4">
+          <div className="reveal-4 mt-7 flex flex-col gap-3 min-[420px]:flex-row min-[420px]:flex-wrap sm:gap-4">
             <Link
               href="/join"
-              className="inline-flex min-h-12 items-center justify-center rounded-lg bg-[#FF6500] px-6 py-3 text-center font-semibold text-white transition duration-300 hover:-translate-y-1 hover:bg-[#E85B00] hover:shadow-[0_10px_30px_rgba(255,101,0,.25)]"
+              className="inline-flex min-h-12 items-center justify-center border border-[#FF5C1A] bg-[#FF5C1A] px-6 py-3 text-center font-bold text-[#071A2D] shadow-[4px_4px_0_#FFFDF8] transition duration-300 hover:translate-x-1 hover:translate-y-1 hover:shadow-none"
             >
               Join Community →
             </Link>
 
             <Link
               href="/projects"
-              className="inline-flex min-h-12 items-center justify-center rounded-lg border border-white/40 px-6 py-3 text-center font-semibold text-white transition duration-300 hover:-translate-y-1 hover:bg-white hover:text-[#00102B]"
+              className="inline-flex min-h-12 items-center justify-center border border-white/35 px-6 py-3 text-center font-semibold text-white transition duration-300 hover:border-white hover:bg-white hover:text-[#071A2D]"
             >
               Explore Our Work →
             </Link>
@@ -196,7 +198,7 @@ export default function Hero() {
         </div>
 
         {/* Code-drawn animated Africa data network */}
-        <div className="relative flex items-center justify-center lg:min-h-[500px]">
+        <div className="reveal-3 relative flex items-center justify-center lg:min-h-[500px]">
           <div className="relative aspect-[596/450] w-full max-w-[650px] overflow-hidden">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_64%_48%,rgba(18,100,232,.2),transparent_42%)]" />
             <svg

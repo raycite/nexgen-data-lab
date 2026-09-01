@@ -21,7 +21,7 @@ export default function Footer() {
   return (
     <footer
       id="resources"
-      className="border-t-4 border-[#FF6500] bg-[#00102B] px-4 py-10 text-white sm:px-6 lg:py-7"
+      className="border-t border-[#FF5C1A] bg-[#03111F] px-4 py-10 text-white sm:px-6 lg:py-9"
     >
       <style>{`
         #footer-brand-logo {

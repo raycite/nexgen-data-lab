@@ -2,7 +2,7 @@ export default function JoinCTA() {
   return (
     <section
       id="join"
-      className="relative overflow-hidden bg-gradient-to-r from-[#FF6500] via-[#FF7A1A] to-[#FF6500] px-4 text-[#001A3D] sm:px-6 lg:px-[210px] xl:px-[14vw]"
+      className="relative overflow-hidden border-y border-[#071A2D] bg-[#FF5C1A] px-4 text-[#071A2D] sm:px-6 lg:px-[10vw]"
     >
       {/* Left circuit decoration */}
       <svg
@@ -55,14 +55,14 @@ export default function JoinCTA() {
       </svg>
 
       {/* Background glow */}
-      <div className="pointer-events-none absolute left-1/2 top-1/2 h-20 w-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-orange-300/20 blur-3xl" />
+      <div className="pointer-events-none absolute inset-0 opacity-15 [background-image:repeating-linear-gradient(120deg,#071A2D_0,#071A2D_1px,transparent_1px,transparent_18px)]" />
 
       {/* Centered content */}
-      <div className="relative z-10 mx-auto flex w-full max-w-[1400px] flex-col items-start justify-center gap-5 py-8 md:min-h-[130px] md:flex-row md:items-center md:justify-between md:py-5 lg:min-h-[110px]">
+      <div className="relative z-10 mx-auto flex w-full max-w-[90rem] flex-col items-start justify-center gap-6 py-10 md:flex-row md:items-center md:justify-between">
         {/* Text */}
         <div className="max-w-2xl">
           <h2
-            className="m-0 text-xl font-bold tracking-tight sm:text-2xl md:text-xl"
+            className="m-0 text-3xl tracking-tight sm:text-4xl"
             style={{
               lineHeight: "1.25",
             }}
@@ -85,7 +85,7 @@ export default function JoinCTA() {
         {/* Button */}
         <a
           href="/join"
-          className="group inline-flex min-h-12 w-full shrink-0 items-center justify-center rounded-lg bg-[#001A3D] px-6 font-semibold text-white shadow-[0_8px_20px_rgba(0,16,43,.25)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#06234F] hover:shadow-[0_12px_25px_rgba(0,16,43,.35)] sm:w-auto"
+          className="group inline-flex min-h-12 w-full shrink-0 items-center justify-center border border-[#071A2D] bg-[#071A2D] px-6 font-bold text-white shadow-[5px_5px_0_#FFFDF8] transition hover:translate-x-1 hover:translate-y-1 hover:shadow-none sm:w-auto"
           style={{
             fontSize: "14px",
             minWidth: "215px",
