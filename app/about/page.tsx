@@ -4,40 +4,13 @@ import Link from "next/link";
 import { ArrowRight, Building2, Eye, GraduationCap, Microscope, Users, Zap } from "lucide-react";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import AboutTeam from "@/components/AboutTeam";
 
 export const metadata: Metadata = {
   title: "About",
   description: "Learn about NextGen Data Lab's mission, story, team, and ways to participate in our AI and data science community.",
   alternates: { canonical: "/about" },
 };
-
-const team = [
-  {
-    name: "Raymond Ntow",
-    role: "Founder",
-    image: "/team-raymond-ntow.png",
-    initials: "RN",
-    linkedin: "https://gh.linkedin.com/in/raymond-ntow-b06a6a216",
-    bio: "Raymond is a data and AI practitioner interested in mathematics, machine learning and computer vision. He studied Mathematics at KNUST and currently works at EY in Accra.",
-    contribution: "He leads the Lab's strategy, research, technical projects and mentorship programmes.",
-  },
-  {
-    name: "Jacinta Amoawah Esi Badu",
-    role: "Co-founder",
-    initials: "JB",
-    linkedin: "https://www.linkedin.com/in/jacinta-badu/",
-    bio: "Jacinta is a technology professional interested in software development, data analysis and machine learning. She holds a Computer Engineering degree from Ashesi University and currently works at EY.",
-    contribution: "She supports strategy, partnerships, programme development and community activities.",
-  },
-  {
-    name: "Emmanuel Agyapong",
-    role: "Program Coordinator",
-    initials: "EA",
-    linkedin: "https://www.linkedin.com/in/emmanuel-agyapong-997a11268/",
-    bio: "Emmanuel is an emerging data and AI practitioner interested in statistics, machine learning and predictive modelling. He is preparing to pursue a master's degree in AI for Business at the University of Arizona.",
-    contribution: "He coordinates workshops, mentorship activities, participants, facilitators and programme resources.",
-  },
-];
 
 const participation = [
   { Icon: GraduationCap, title: "Students", text: "Learn practical skills through workshops, shared resources, mentorship and collaborative projects. Work with real data and build portfolio projects that demonstrate your growth." },
@@ -135,38 +108,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-[#F5F8FC] px-4 py-12 sm:px-6 sm:py-16">
-        <div className="mx-auto max-w-6xl">
-          <div className="max-w-2xl">
-            <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#1264E8]">Meet the team</p>
-            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">The people behind the initiative</h2>
-          </div>
-          <div className="mt-8 grid gap-6 md:grid-cols-3">
-            {team.map((member) => (
-              <article key={member.name} className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-                <div className="relative h-64 overflow-hidden bg-gradient-to-br from-[#071A3A] to-[#1264E8] sm:h-72 md:h-56 lg:h-64">
-                  {member.image ? (
-                    <Image src={member.image} alt={`${member.name}, ${member.role} at NextGen Data Lab`} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover object-top" />
-                  ) : (
-                    <div className="flex h-full items-center justify-center" aria-label={`${member.name} photo placeholder`}>
-                      <span className="flex h-28 w-28 items-center justify-center rounded-full border border-white/30 bg-white/10 text-4xl font-bold text-white shadow-xl backdrop-blur">{member.initials}</span>
-                    </div>
-                  )}
-                  <span className="absolute bottom-4 left-4 rounded-full bg-[#E96832] px-3 py-1.5 text-xs font-bold text-white shadow">{member.role}</span>
-                </div>
-                <div className="p-5">
-                  <div className="flex items-start justify-between gap-3">
-                    <h3 className="text-xl font-bold leading-tight">{member.name}</h3>
-                    <a href={member.linkedin} target="_blank" rel="noreferrer" aria-label={`${member.name} on LinkedIn`} className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-50 text-[#1264E8] transition hover:bg-[#1264E8] hover:text-white"><LinkedInMark /></a>
-                  </div>
-                  <p className="mt-3 text-sm leading-6 text-slate-600">{member.bio}</p>
-                  <p className="mt-3 border-t border-slate-100 pt-3 text-sm leading-6 text-slate-600">{member.contribution}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+      <AboutTeam />
 
       <section className="px-4 py-12 sm:px-6 sm:py-16">
         <div className="mx-auto max-w-6xl">
@@ -195,13 +137,5 @@ export default function AboutPage() {
 
       <Footer />
     </main>
-  );
-}
-
-function LinkedInMark() {
-  return (
-    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden="true">
-      <path d="M6.5 8.25H3V21h3.5V8.25ZM4.75 3A2.05 2.05 0 1 0 4.75 7.1 2.05 2.05 0 0 0 4.75 3ZM13 8.25H9.65V21H13v-6.7c0-1.77.34-3.48 2.53-3.48 2.16 0 2.19 2.02 2.19 3.6V21H21v-7.42c0-3.64-.78-6.44-5.04-6.44A4.4 4.4 0 0 0 12.04 9.3H12V8.25Z" />
-    </svg>
   );
 }
