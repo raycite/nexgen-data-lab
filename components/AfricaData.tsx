@@ -72,7 +72,7 @@ export default function AfricaData() {
             Data shaped by <span className="italic text-[#1168D9]">context,</span> not assumption.
           </h2>
 
-          <p className="mt-6 max-w-lg border-l-2 border-[#FF5C1A] pl-5 text-sm leading-7 text-[#405064]">
+          <p className="mt-6 max-w-lg border-l-2 border-[#D66135] pl-5 text-sm leading-7 text-[#405064]">
             Many AI systems are trained on data that does not fully represent
             African people, languages, environments, and realities.
           </p>
@@ -136,12 +136,12 @@ export default function AfricaData() {
 
           {/* Animated orange nodes */}
           <span
-            className="africa-map-node absolute left-[52%] top-[38%] h-3 w-3 rounded-full bg-[#FF6500] shadow-[0_0_14px_rgba(255,101,0,.7)]"
+            className="africa-map-node absolute left-[52%] top-[38%] h-3 w-3 rounded-full bg-[#D66135] shadow-[0_0_14px_rgba(214,97,53,.55)]"
             style={{ transformOrigin: "center" }}
           />
 
           <span
-            className="africa-map-node absolute left-[58%] top-[65%] h-3 w-3 rounded-full bg-[#FF6500] shadow-[0_0_14px_rgba(255,101,0,.7)]"
+            className="africa-map-node absolute left-[58%] top-[65%] h-3 w-3 rounded-full bg-[#D66135] shadow-[0_0_14px_rgba(214,97,53,.55)]"
             style={{
               animationDelay: "0.8s",
               transformOrigin: "center",
@@ -200,7 +200,7 @@ export default function AfricaData() {
             style={{ animationDelay: "1.5s" }}
           >
             <Users
-              className="mt-1 text-[#FF6500]"
+              className="mt-1 text-[#D66135]"
               size={31}
               strokeWidth={1.8}
             />

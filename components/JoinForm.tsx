@@ -58,7 +58,7 @@ export default function JoinForm() {
         <CheckCircle2 className="h-14 w-14 text-emerald-600" aria-hidden="true" />
         <h2 className="mt-5 text-2xl font-bold text-slate-900">Application received</h2>
         <p className="mt-3 max-w-md leading-7 text-slate-600">
-          Thank you for your interest in NexGen Data Lab. We&apos;ll review your details and get in touch.
+          Thank you for your interest in NextGen Data Lab. We&apos;ll review your details and get in touch.
         </p>
         <Link href="/" className="mt-7 rounded-lg bg-[#00102B] px-6 py-3 font-semibold text-white hover:bg-[#06234F]">
           Return home
@@ -110,12 +110,12 @@ export default function JoinForm() {
 
       <label className="flex items-start gap-3 text-sm leading-6 text-slate-600">
         <input type="checkbox" required className="mt-1 h-4 w-4 shrink-0 accent-[#1264E8]" />
-        I agree that NexGen Data Lab may use these details to review my application and contact me about relevant opportunities.
+        I agree that NextGen Data Lab may use these details to review my application and contact me about relevant opportunities.
       </label>
 
       {status === "error" && <p role="alert" className="rounded-lg bg-red-50 px-4 py-3 text-sm text-red-700">{message}</p>}
 
-      <button type="submit" disabled={status === "submitting"} className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-lg bg-[#FF6500] px-6 font-semibold text-white transition hover:bg-[#E85B00] disabled:cursor-wait disabled:opacity-70">
+      <button type="submit" disabled={status === "submitting"} className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-lg bg-[#D66135] px-6 font-semibold text-white transition hover:bg-[#B94F29] disabled:cursor-wait disabled:opacity-70">
         {status === "submitting" && <LoaderCircle className="h-5 w-5 animate-spin" aria-hidden="true" />}
         {status === "submitting" ? "Submitting..." : "Submit application"}
       </button>

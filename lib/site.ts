@@ -1,4 +1,4 @@
-export const siteName = "NexGen Data Lab";
+export const siteName = "NextGen Data Lab";
 export const siteDescription = "A community-driven initiative helping students and researchers learn AI, mathematics, programming and data science through practical projects, mentorship and African-focused research.";
 
 export function getSiteUrl() {

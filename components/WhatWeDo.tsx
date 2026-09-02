@@ -23,7 +23,7 @@ export default function WhatWeDo() {
       link: "Explore Research →",
       href: "/datasets",
       icon: Search,
-      iconColor: "text-[#C9572F]",
+      iconColor: "text-[#D66135]",
     },
     {
       title: "Build",
@@ -41,7 +41,7 @@ export default function WhatWeDo() {
       link: "Join the Community →",
       href: "#community",
       icon: UsersRound,
-      iconColor: "text-[#C9572F]",
+      iconColor: "text-[#D66135]",
     },
   ];
 
@@ -92,7 +92,7 @@ export default function WhatWeDo() {
 
                 <a
                   href={item.href}
-                  className="mt-5 inline-flex items-center border-b border-[#071A2D] pb-1 text-xs font-bold uppercase tracking-[.1em] text-[#071A2D] transition hover:border-[#C9572F] hover:text-[#C9572F]"
+                  className="mt-5 inline-flex items-center border-b border-[#071A2D] pb-1 text-xs font-bold uppercase tracking-[.1em] text-[#071A2D] transition hover:border-[#D66135] hover:text-[#D66135]"
                 >
                   {item.link}
                 </a>

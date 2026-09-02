@@ -2,7 +2,7 @@
 
 ## 1. Create the base and table
 
-Create a base for NexGen Data Lab and name the table `Applications`. Add these fields using the exact names below:
+Create a base for NextGen Data Lab and name the table `Applications`. Add these fields using the exact names below:
 
 | Field | Airtable type | Options |
 | --- | --- | --- |

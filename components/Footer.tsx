@@ -48,7 +48,7 @@ export default function Footer() {
               <Image
                 id="footer-brand-logo"
                 src="/nexgen-logo-light-v2.png"
-                alt="NexGen Data Lab"
+                alt="NextGen Data Lab"
                 fill
                 sizes="145px"
                 className="object-contain object-left"
@@ -130,7 +130,7 @@ export default function Footer() {
           className="mt-5 text-center text-slate-400"
           style={{ fontSize: "11px" }}
         >
-          © 2026 NexGen Data Lab. All rights reserved.
+          © 2026 NextGen Data Lab. All rights reserved.
         </div>
       </div>
     </footer>
@@ -166,7 +166,7 @@ function FooterLinks({
           <li key={link.label}>
             <a
               href={link.href}
-              className="transition hover:text-[#FF6500]"
+              className="transition hover:text-[#D66135]"
             >
               {link.label}
             </a>
@@ -192,7 +192,7 @@ function SocialLink({
     <a
       href={href}
       aria-label={label}
-      className="text-white transition duration-300 hover:-translate-y-0.5 hover:text-[#FF6500]"
+      className="text-white transition duration-300 hover:-translate-y-0.5 hover:text-[#D66135]"
     >
       {children}
     </a>

@@ -33,7 +33,7 @@ const packets: Packet[] = [
   },
   {
     path: "M275 205 C350 150 430 165 520 92",
-    color: "#C9572F",
+    color: "#D66135",
     duration: "5.2s",
   },
   {
@@ -43,7 +43,7 @@ const packets: Packet[] = [
   },
   {
     path: "M365 250 C410 290 445 330 520 335",
-    color: "#C9572F",
+    color: "#D66135",
     duration: "5.8s",
   },
 ];
@@ -151,7 +151,7 @@ export default function Hero() {
         }
       `}</style>
 
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_76%_44%,rgba(17,104,217,.22),transparent_36%),radial-gradient(circle_at_8%_92%,rgba(201,87,47,.1),transparent_28%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_76%_44%,rgba(17,104,217,.22),transparent_36%),radial-gradient(circle_at_8%_92%,rgba(214,97,53,.1),transparent_28%)]" />
       <div className="pointer-events-none absolute inset-y-0 left-[7%] w-px bg-white/10" />
 
       <div className="mx-auto grid max-w-[90rem] items-center gap-8 px-4 py-12 sm:px-6 sm:py-14 lg:min-h-[630px] lg:grid-cols-[0.86fr_1.14fr] lg:gap-8 lg:px-10">
@@ -168,18 +168,18 @@ export default function Hero() {
             <br />
 
             <span className="relative inline-block">
-              <span className="hero-highlight relative z-10 bg-gradient-to-r from-[#C9572F] via-[#E08A68] to-[#C9572F] bg-[length:200%_100%] bg-clip-text text-transparent">
+              <span className="hero-highlight relative z-10 bg-gradient-to-r from-[#D66135] via-[#E09573] to-[#D66135] bg-[length:200%_100%] bg-clip-text text-transparent">
                 AI Future.
               </span>
 
-              <span className="hero-underline absolute bottom-0 left-0 h-[3px] w-full origin-left rounded-full bg-[#C9572F]" />
+              <span className="hero-underline absolute bottom-0 left-0 h-[3px] w-full origin-left rounded-full bg-[#D66135]" />
             </span>
           </h1>
 
           <div className="reveal-3 mt-8 flex flex-col gap-3 min-[420px]:flex-row min-[420px]:flex-wrap sm:gap-4">
             <Link
               href="/join"
-              className="inline-flex min-h-12 items-center justify-center border border-[#C9572F] bg-[#C9572F] px-6 py-3 text-center font-bold text-white shadow-[4px_4px_0_#FFFDF8] transition duration-300 hover:translate-x-1 hover:translate-y-1 hover:shadow-none"
+              className="inline-flex min-h-12 items-center justify-center border border-[#D66135] bg-[#D66135] px-6 py-3 text-center font-bold text-white shadow-[4px_4px_0_#FFFDF8] transition duration-300 hover:translate-x-1 hover:translate-y-1 hover:shadow-none"
             >
               Join Community →
             </Link>
@@ -251,7 +251,7 @@ export default function Hero() {
                   <path d="M20 105L104 65L190 118L278 62L366 116L480 82M20 190L104 148L190 205L278 145L366 211L492 165M42 278L128 224L216 286L304 228L392 294L480 248M90 374L170 320L252 382L336 324L420 390" />
                   <path d="M104 65L104 148L128 224L170 320M190 118L190 205L216 286L252 382M278 62L278 145L304 228L336 324M366 116L366 211L392 294L420 390" />
                 </g>
-                <g fill="#C9572F" filter="url(#packetGlow)"><circle cx="190" cy="205" r="7" /><circle cx="304" cy="228" r="7" /><circle cx="392" cy="294" r="7" /></g>
+                <g fill="#D66135" filter="url(#packetGlow)"><circle cx="190" cy="205" r="7" /><circle cx="304" cy="228" r="7" /><circle cx="392" cy="294" r="7" /></g>
                 <g fill="#168BFF" filter="url(#packetGlow)"><circle cx="278" cy="145" r="7" /><circle cx="252" cy="382" r="6" /></g>
               </g>
 

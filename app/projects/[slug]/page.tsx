@@ -33,11 +33,11 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           <Link href="/projects" className="inline-flex min-h-11 items-center text-sm font-semibold text-[#1264E8]">← All projects</Link>
           <div className="mt-5 grid overflow-hidden rounded-3xl bg-[#00102B] shadow-2xl lg:grid-cols-[1.05fr_0.95fr]">
             <div className="flex flex-col justify-center p-7 text-white sm:p-10 lg:p-12">
-              <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#FF6500]">{project.eyebrow}</p>
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#D66135]">{project.eyebrow}</p>
               <h1 className="mt-4 text-3xl font-bold leading-tight sm:text-5xl">{project.title}</h1>
               <p className="mt-5 text-base leading-7 text-slate-300 sm:text-lg">{project.summary}</p>
               {project.github && (
-                <a href={project.github} target="_blank" rel="noreferrer" className="mt-7 inline-flex min-h-12 w-fit items-center gap-2 rounded-lg bg-[#FF6500] px-5 font-semibold text-white transition hover:bg-[#E85B00]">
+                <a href={project.github} target="_blank" rel="noreferrer" className="mt-7 inline-flex min-h-12 w-fit items-center gap-2 rounded-lg bg-[#D66135] px-5 font-semibold text-white transition hover:bg-[#B94F29]">
                   View on GitHub <ExternalLink className="h-4 w-4" aria-hidden="true" />
                 </a>
               )}

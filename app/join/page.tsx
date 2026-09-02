@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "Join the Community",
-  description: "Apply to learn, research, mentor, or collaborate with the NexGen Data Lab community.",
+  description: "Apply to learn, research, mentor, or collaborate with the NextGen Data Lab community.",
   alternates: { canonical: "/join" },
 };
 
@@ -29,7 +29,7 @@ export default function JoinPage() {
         <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[0.75fr_1.25fr] lg:items-start">
           <div className="lg:sticky lg:top-24">
             <h2 className="text-2xl font-bold">A place to learn and contribute</h2>
-            <p className="mt-3 leading-7 text-slate-600">Complete the form and we&apos;ll connect you with the most relevant NexGen opportunities.</p>
+            <p className="mt-3 leading-7 text-slate-600">Complete the form and we&apos;ll connect you with the most relevant NextGen opportunities.</p>
             <div className="mt-7 space-y-5">
               <Benefit icon={BrainCircuit} title="Develop practical skills" text="Learn AI, data science, programming, and research through hands-on work." />
               <Benefit icon={UsersRound} title="Meet your community" text="Connect with students, researchers, mentors, and professionals across Africa." />

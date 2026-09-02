@@ -138,7 +138,7 @@ export default function LearningCommunity() {
           <div className="mx-auto max-w-xl">
 
             <p className="eyebrow text-[#6EB4FF]">
-              Learn with NexGen
+              Learn with NextGen
             </p>
 
             <h2 className="mt-4 text-4xl leading-tight sm:text-5xl">
@@ -197,7 +197,7 @@ export default function LearningCommunity() {
 
             <a
               href="/programs"
-              className="mt-7 inline-flex min-h-11 items-center text-sm font-semibold text-[#FF6500] transition hover:opacity-80"
+              className="mt-7 inline-flex min-h-11 items-center text-sm font-semibold text-[#D66135] transition hover:opacity-80"
             >
               Explore all resources →
             </a>
@@ -225,7 +225,7 @@ export default function LearningCommunity() {
               {/* Upcoming Events */}
               <div className="flex items-start gap-2.5">
 
-                <div className="shrink-0 text-[#FF6500]">
+                <div className="shrink-0 text-[#D66135]">
                   <CalendarIcon />
                 </div>
 
@@ -243,7 +243,7 @@ export default function LearningCommunity() {
               {/* Mentorship */}
               <div className="flex items-start gap-2.5">
 
-                <div className="shrink-0 text-[#FF6500]">
+                <div className="shrink-0 text-[#D66135]">
                   <MentorshipIcon />
                 </div>
 
@@ -261,7 +261,7 @@ export default function LearningCommunity() {
               {/* Community Projects */}
               <div className="flex items-start gap-2.5">
 
-                <div className="shrink-0 text-[#FF6500]">
+                <div className="shrink-0 text-[#D66135]">
                   <RocketIcon />
                 </div>
 
@@ -280,7 +280,7 @@ export default function LearningCommunity() {
 
             <a
               href="/join"
-              className="mt-7 inline-flex min-h-11 items-center text-sm font-semibold text-[#FF6500] transition hover:opacity-80"
+              className="mt-7 inline-flex min-h-11 items-center text-sm font-semibold text-[#D66135] transition hover:opacity-80"
             >
               Explore Community →
             </a>

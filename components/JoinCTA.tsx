@@ -2,7 +2,7 @@ export default function JoinCTA() {
   return (
     <section
       id="join"
-      className="relative overflow-hidden border-t-[7px] border-[#C9572F] bg-[#071A2D] px-4 text-white sm:px-6 lg:px-[10vw]"
+      className="relative overflow-hidden border-t-[7px] border-[#D66135] bg-[#071A2D] px-4 text-white sm:px-6 lg:px-[10vw]"
     >
       {/* Left circuit decoration */}
       <svg
@@ -77,7 +77,7 @@ export default function JoinCTA() {
               lineHeight: "1.5",
             }}
           >
-            Join NexGen Data Lab and be part of a community shaping the future
+            Join NextGen Data Lab and be part of a community shaping the future
             of AI and data in Africa.
           </p>
         </div>
@@ -85,13 +85,13 @@ export default function JoinCTA() {
         {/* Button */}
         <a
           href="/join"
-          className="group inline-flex min-h-12 w-full shrink-0 items-center justify-center border border-white/45 bg-white px-6 font-bold text-[#071A2D] shadow-[5px_5px_0_#C9572F] transition hover:translate-x-1 hover:translate-y-1 hover:shadow-none sm:w-auto"
+          className="group inline-flex min-h-12 w-full shrink-0 items-center justify-center border border-white/45 bg-white px-6 font-bold text-[#071A2D] shadow-[5px_5px_0_#D66135] transition hover:translate-x-1 hover:translate-y-1 hover:shadow-none sm:w-auto"
           style={{
             fontSize: "14px",
             minWidth: "215px",
           }}
         >
-          Join NexGen Today
+          Join NextGen Today
 
           <span
             className="ml-3 transition-transform duration-300 group-hover:translate-x-1"
