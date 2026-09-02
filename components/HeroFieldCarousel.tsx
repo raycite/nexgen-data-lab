@@ -48,6 +48,7 @@ export default function HeroFieldCarousel() {
             src={moment.src}
             alt={moment.alt}
             fill
+            priority={index === 0}
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 48vw, 320px"
             className={`hero-field-slide object-cover transition-[opacity,transform] duration-1000 ease-out ${
               index === active ? "scale-100 opacity-100" : "scale-[1.035] opacity-0"
