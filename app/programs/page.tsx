@@ -41,9 +41,9 @@ export default function ProgramsPage() {
 
       <section className="relative overflow-hidden bg-[#00102B] px-4 py-14 text-white sm:px-6 sm:py-18">
         <div className="absolute -left-20 top-0 h-72 w-72 rounded-full bg-blue-600/20 blur-3xl" />
-        <div className="absolute -right-16 bottom-0 h-72 w-72 rounded-full bg-[#D66135]/12 blur-3xl" />
+        <div className="absolute -right-16 bottom-0 h-72 w-72 rounded-full bg-[#E96832]/12 blur-3xl" />
         <div className="relative mx-auto max-w-5xl text-center">
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#D66135]">Learning & Programs</p>
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#E96832]">Learning & Programs</p>
           <h1 className="mx-auto mt-4 max-w-4xl text-3xl font-bold leading-tight sm:text-5xl">Build strong foundations. Apply what you learn.</h1>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg">Upcoming beginner-friendly programs designed to help you understand the ideas, mathematics and programming behind AI and data science.</p>
         </div>
@@ -62,7 +62,7 @@ export default function ProgramsPage() {
                 <div className="flex items-start justify-between gap-4"><span className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-[#1264E8]"><Icon className="h-6 w-6" aria-hidden="true" /></span><span className="rounded-full bg-orange-50 px-3 py-1.5 text-xs font-bold text-[#D95700]">Coming soon</span></div>
                 <h3 className="mt-5 text-xl font-bold leading-tight">{title}</h3>
                 <p className="mt-3 text-sm leading-6 text-slate-600">{description}</p>
-                <ul className="mt-5 space-y-2 text-sm text-slate-700">{topics.map((topic) => <li key={topic} className="flex gap-2"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D66135]" />{topic}</li>)}</ul>
+                <ul className="mt-5 space-y-2 text-sm text-slate-700">{topics.map((topic) => <li key={topic} className="flex gap-2"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#E96832]" />{topic}</li>)}</ul>
                 <div className="mt-auto flex items-center gap-2 border-t border-slate-100 pt-5 text-xs font-semibold text-slate-500"><Sparkles className="h-4 w-4 text-[#1264E8]" aria-hidden="true" />{level}</div>
               </article>
             ))}
@@ -73,11 +73,11 @@ export default function ProgramsPage() {
       <section className="bg-slate-50 px-4 py-12 sm:px-6 sm:py-16">
         <div className="mx-auto grid max-w-6xl overflow-hidden rounded-3xl bg-[#1264E8] text-white shadow-xl lg:grid-cols-[1fr_0.7fr]">
           <div className="p-7 sm:p-10">
-            <div className="flex items-center gap-3"><span className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/15"><UsersRound className="h-6 w-6" aria-hidden="true" /></span><span className="rounded-full bg-[#D66135] px-3 py-1.5 text-xs font-bold">Coming soon</span></div>
+            <div className="flex items-center gap-3"><span className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/15"><UsersRound className="h-6 w-6" aria-hidden="true" /></span><span className="rounded-full bg-[#E96832] px-3 py-1.5 text-xs font-bold">Coming soon</span></div>
             <p className="mt-6 text-xs font-bold uppercase tracking-[0.18em] text-blue-100">First cohort</p>
             <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Apply to become a mentee</h2>
             <p className="mt-4 max-w-2xl leading-7 text-blue-50">Our first mentorship cohort will support learners who want structured guidance in AI, mathematics, Python and data science. Mentees will learn with peers, receive guidance from practitioners and work toward practical projects.</p>
-            <Link href="/join" className="mt-7 inline-flex min-h-12 items-center gap-2 rounded-full bg-[#D66135] px-6 font-semibold text-white transition hover:bg-[#B94F29]">Register your interest <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
+            <Link href="/join" className="mt-7 inline-flex min-h-12 items-center gap-2 rounded-xl bg-[#E96832] px-6 font-semibold text-white transition hover:bg-[#C95327]">Register your interest <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
           </div>
           <div className="grid content-center gap-4 border-t border-white/15 bg-[#0B4EB5] p-7 sm:p-10 lg:border-l lg:border-t-0">
             <ProgramDetail icon={CalendarClock} title="Schedule" text="Cohort dates will be announced soon." />

@@ -72,7 +72,7 @@ export default function AfricaData() {
             Data shaped by <span className="italic text-[#1168D9]">context,</span> not assumption.
           </h2>
 
-          <p className="mt-6 max-w-lg border-l-2 border-[#D66135] pl-5 text-sm leading-7 text-[#405064]">
+          <p className="mt-6 max-w-lg border-l-2 border-[#E96832] pl-5 text-sm leading-7 text-[#405064]">
             Many AI systems are trained on data that does not fully represent
             African people, languages, environments, and realities.
           </p>
@@ -84,7 +84,7 @@ export default function AfricaData() {
 
           <a
             href="/datasets"
-            className="mt-6 inline-flex items-center border border-[#071A2D] bg-[#1168D9] px-5 py-3 text-sm font-bold text-white shadow-[4px_4px_0_#071A2D] transition hover:translate-x-1 hover:translate-y-1 hover:shadow-none"
+            className="mt-6 inline-flex items-center rounded-xl bg-[#1168D9] px-5 py-3 text-sm font-bold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#0D57B7]"
           >
             Explore Data Hub →
           </a>
@@ -136,12 +136,12 @@ export default function AfricaData() {
 
           {/* Animated orange nodes */}
           <span
-            className="africa-map-node absolute left-[52%] top-[38%] h-3 w-3 rounded-full bg-[#D66135] shadow-[0_0_14px_rgba(214,97,53,.55)]"
+            className="africa-map-node absolute left-[52%] top-[38%] h-3 w-3 rounded-full bg-[#E96832] shadow-[0_0_14px_rgba(233,104,50,.55)]"
             style={{ transformOrigin: "center" }}
           />
 
           <span
-            className="africa-map-node absolute left-[58%] top-[65%] h-3 w-3 rounded-full bg-[#D66135] shadow-[0_0_14px_rgba(214,97,53,.55)]"
+            className="africa-map-node absolute left-[58%] top-[65%] h-3 w-3 rounded-full bg-[#E96832] shadow-[0_0_14px_rgba(233,104,50,.55)]"
             style={{
               animationDelay: "0.8s",
               transformOrigin: "center",
@@ -200,7 +200,7 @@ export default function AfricaData() {
             style={{ animationDelay: "1.5s" }}
           >
             <Users
-              className="mt-1 text-[#D66135]"
+              className="mt-1 text-[#E96832]"
               size={31}
               strokeWidth={1.8}
             />

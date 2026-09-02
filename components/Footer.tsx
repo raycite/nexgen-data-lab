@@ -166,7 +166,7 @@ function FooterLinks({
           <li key={link.label}>
             <a
               href={link.href}
-              className="transition hover:text-[#D66135]"
+              className="transition hover:text-[#E96832]"
             >
               {link.label}
             </a>
@@ -192,7 +192,7 @@ function SocialLink({
     <a
       href={href}
       aria-label={label}
-      className="text-white transition duration-300 hover:-translate-y-0.5 hover:text-[#D66135]"
+      className="text-white transition duration-300 hover:-translate-y-0.5 hover:text-[#E96832]"
     >
       {children}
     </a>

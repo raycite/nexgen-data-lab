@@ -8,10 +8,10 @@ export default function OpenGraphImage() {
   return new ImageResponse(
     <div style={{ display: "flex", width: "100%", height: "100%", position: "relative", overflow: "hidden", background: "#00102B", color: "white", padding: "72px", fontFamily: "Arial, sans-serif" }}>
       <div style={{ display: "flex", position: "absolute", width: 420, height: 420, borderRadius: 999, background: "#1264E8", opacity: 0.22, top: -180, right: -80 }} />
-      <div style={{ display: "flex", position: "absolute", width: 320, height: 320, borderRadius: 999, background: "#D66135", opacity: 0.16, bottom: -190, left: 200 }} />
+      <div style={{ display: "flex", position: "absolute", width: 320, height: 320, borderRadius: 999, background: "#E96832", opacity: 0.16, bottom: -190, left: 200 }} />
       <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", width: "100%" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "center", width: 64, height: 64, borderRadius: 16, background: "#D66135", fontSize: 36, fontWeight: 800 }}>N</div>
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "center", width: 64, height: 64, borderRadius: 16, background: "#E96832", fontSize: 36, fontWeight: 800 }}>N</div>
           <div style={{ display: "flex", fontSize: 28, fontWeight: 700 }}>NextGen Data Lab</div>
         </div>
         <div style={{ display: "flex", flexDirection: "column", maxWidth: 940 }}>

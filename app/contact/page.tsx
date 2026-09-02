@@ -24,9 +24,9 @@ export default function ContactPage() {
 
       <section className="relative overflow-hidden bg-[#00102B] px-4 py-14 text-white sm:px-6 sm:py-16">
         <div className="absolute -left-24 top-0 h-72 w-72 rounded-full bg-blue-600/20 blur-3xl" />
-        <div className="absolute -right-20 bottom-0 h-72 w-72 rounded-full bg-[#D66135]/12 blur-3xl" />
+        <div className="absolute -right-20 bottom-0 h-72 w-72 rounded-full bg-[#E96832]/12 blur-3xl" />
         <div className="relative mx-auto max-w-4xl text-center">
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#D66135]">Contact & Collaborate</p>
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#E96832]">Contact & Collaborate</p>
           <h1 className="mt-4 text-3xl font-bold sm:text-5xl">Let&apos;s start a useful conversation.</h1>
           <p className="mx-auto mt-5 max-w-2xl leading-7 text-slate-300 sm:text-lg">Reach out about research, training, mentorship, datasets or another idea that aligns with the NextGen Data Lab community.</p>
         </div>
@@ -53,7 +53,7 @@ export default function ContactPage() {
           </div>
 
           <div className="rounded-3xl bg-slate-50 p-6 sm:p-8">
-            <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#D66135]">Ways to work with us</p>
+            <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#E96832]">Ways to work with us</p>
             <h2 className="mt-2 text-2xl font-bold sm:text-3xl">What would you like to discuss?</h2>
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
               {opportunities.map(({ Icon, title, text }) => (
@@ -64,7 +64,7 @@ export default function ContactPage() {
                 </article>
               ))}
             </div>
-            <a href="mailto:nextgendatalab@gmail.com?subject=Collaboration%20with%20NextGen%20Data%20Lab" className="mt-6 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#D66135] px-6 font-semibold text-white transition hover:bg-[#B94F29]">Start a conversation <Mail className="h-4 w-4" aria-hidden="true" /></a>
+            <a href="mailto:nextgendatalab@gmail.com?subject=Collaboration%20with%20NextGen%20Data%20Lab" className="mt-6 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#E96832] px-6 font-semibold text-white transition hover:bg-[#C95327]">Start a conversation <Mail className="h-4 w-4" aria-hidden="true" /></a>
           </div>
         </div>
       </section>

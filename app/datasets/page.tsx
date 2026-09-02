@@ -19,10 +19,10 @@ export default function DatasetsPage() {
         <div className="absolute -left-20 top-0 h-72 w-72 rounded-full bg-blue-600/20 blur-3xl" />
         <div className="absolute -right-16 bottom-0 h-72 w-72 rounded-full bg-emerald-500/15 blur-3xl" />
         <div className="relative mx-auto max-w-5xl text-center">
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#D66135]">NextGen Data Hub</p>
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#E96832]">NextGen Data Hub</p>
           <h1 className="mx-auto mt-4 max-w-4xl text-3xl font-bold leading-tight sm:text-5xl">Data grounded in African research and realities.</h1>
           <p className="mx-auto mt-5 max-w-3xl leading-7 text-slate-300 sm:text-lg">A growing home for responsibly documented datasets from Ghana and other African contexts—shared by researchers, students and the NextGen Data Lab team.</p>
-          <a href="#contribute" className="mt-7 inline-flex min-h-12 items-center gap-2 rounded-full bg-[#D66135] px-6 font-semibold text-white transition hover:bg-[#B94F29]">Submit a dataset <UploadCloud className="h-5 w-5" aria-hidden="true" /></a>
+          <a href="#contribute" className="mt-7 inline-flex min-h-12 items-center gap-2 rounded-xl bg-[#E96832] px-6 font-semibold text-white transition hover:bg-[#C95327]">Submit a dataset <UploadCloud className="h-5 w-5" aria-hidden="true" /></a>
         </div>
       </section>
 
@@ -44,7 +44,7 @@ export default function DatasetsPage() {
                 <div className="text-center"><span className="mx-auto flex h-20 w-20 items-center justify-center rounded-2xl border border-white/30 bg-white/10"><Leaf className="h-10 w-10" aria-hidden="true" /></span><p className="mt-4 text-sm font-bold uppercase tracking-[0.16em] text-emerald-50">Environment & Public Health</p></div>
               </div>
               <div className="p-6 sm:p-8">
-                <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#D66135]">NextGen Data Lab research</p>
+                <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#E96832]">NextGen Data Lab research</p>
                 <h3 className="mt-2 text-2xl font-bold">Northern Ghana Wetland Heavy-Metal Dataset</h3>
                 <p className="mt-4 leading-7 text-slate-600">Research data examining heavy-metal residues across water, soil, fish and vegetables in the Libga and Bunglung inland wetland ecosystems.</p>
                 <div className="mt-5 flex flex-wrap gap-2"><Tag Icon={MapPin} text="Northern Ghana" /><Tag Icon={Database} text="Excel dataset" /><Tag Icon={Scale} text="Environmental risk" /><Tag Icon={FileCheck2} text="Research documented" /></div>
@@ -59,8 +59,8 @@ export default function DatasetsPage() {
 
       <section id="contribute" className="scroll-mt-20 bg-white px-4 py-12 sm:px-6 sm:py-16">
         <div className="mx-auto grid max-w-6xl gap-8 rounded-3xl bg-[#00102B] p-7 text-white sm:p-10 lg:grid-cols-[1fr_0.8fr] lg:items-center">
-          <div><p className="text-xs font-bold uppercase tracking-[0.18em] text-[#D66135]">Contribute data</p><h2 className="mt-3 text-3xl font-bold">Share a Ghanaian or African research dataset</h2><p className="mt-4 max-w-2xl leading-7 text-slate-300">Researchers, students and organisations can submit responsibly collected datasets for review. Include a clear description, source, collection method, licence or access conditions, and confirmation that sensitive personal information has been removed or appropriately protected.</p></div>
-          <div className="rounded-2xl bg-white/10 p-6"><h3 className="font-bold">How submission works for now</h3><ol className="mt-4 space-y-3 text-sm leading-6 text-slate-200"><li>1. Attach the dataset to an email, or share a Drive, GitHub, Zenodo or repository link.</li><li>2. Include its topic, location, formats, source and intended use.</li><li>3. The team reviews the documentation, permissions and privacy considerations before publishing.</li></ol><a href="mailto:nextgendatalab@gmail.com?subject=Dataset%20Contribution%20to%20NextGen%20Data%20Hub" className="mt-5 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#D66135] px-5 font-semibold text-white transition hover:bg-[#B94F29]"><Mail className="h-5 w-5" aria-hidden="true" />Email your submission</a></div>
+          <div><p className="text-xs font-bold uppercase tracking-[0.18em] text-[#E96832]">Contribute data</p><h2 className="mt-3 text-3xl font-bold">Share a Ghanaian or African research dataset</h2><p className="mt-4 max-w-2xl leading-7 text-slate-300">Researchers, students and organisations can submit responsibly collected datasets for review. Include a clear description, source, collection method, licence or access conditions, and confirmation that sensitive personal information has been removed or appropriately protected.</p></div>
+          <div className="rounded-2xl bg-white/10 p-6"><h3 className="font-bold">How submission works for now</h3><ol className="mt-4 space-y-3 text-sm leading-6 text-slate-200"><li>1. Attach the dataset to an email, or share a Drive, GitHub, Zenodo or repository link.</li><li>2. Include its topic, location, formats, source and intended use.</li><li>3. The team reviews the documentation, permissions and privacy considerations before publishing.</li></ol><a href="mailto:nextgendatalab@gmail.com?subject=Dataset%20Contribution%20to%20NextGen%20Data%20Hub" className="mt-5 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#E96832] px-5 font-semibold text-white transition hover:bg-[#C95327]"><Mail className="h-5 w-5" aria-hidden="true" />Email your submission</a></div>
         </div>
       </section>
 

@@ -29,7 +29,7 @@ export default function ProjectsPage() {
             <article key={project.slug} className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
               <ProjectVisual project={project} />
               <div className="p-6 sm:p-7">
-                <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#D66135]">{project.eyebrow}</p>
+                <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#E96832]">{project.eyebrow}</p>
                 <h2 className="mt-2 text-2xl font-bold">{project.title}</h2>
                 <p className="mt-3 leading-7 text-slate-600">{project.summary}</p>
                 <div className="mt-4 flex flex-wrap gap-2">

@@ -115,7 +115,7 @@ export default function JoinForm() {
 
       {status === "error" && <p role="alert" className="rounded-lg bg-red-50 px-4 py-3 text-sm text-red-700">{message}</p>}
 
-      <button type="submit" disabled={status === "submitting"} className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-lg bg-[#D66135] px-6 font-semibold text-white transition hover:bg-[#B94F29] disabled:cursor-wait disabled:opacity-70">
+      <button type="submit" disabled={status === "submitting"} className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#E96832] px-6 font-semibold text-white transition hover:bg-[#C95327] disabled:cursor-wait disabled:opacity-70">
         {status === "submitting" && <LoaderCircle className="h-5 w-5 animate-spin" aria-hidden="true" />}
         {status === "submitting" ? "Submitting..." : "Submit application"}
       </button>

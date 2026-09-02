@@ -83,7 +83,7 @@ export default function HeroFieldCarousel({ children }: { children: ReactNode })
             <Image src={photo.src} alt={photo.alt} fill sizes="(max-width: 1024px) 100vw, 52vw" className="object-cover" loading="eager" />
             <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(3,17,31,.9)_0%,rgba(3,17,31,.68)_38%,rgba(3,17,31,.2)_78%,rgba(3,17,31,.4)_100%),linear-gradient(0deg,rgba(3,17,31,.46),transparent_55%)]" />
             <p className="absolute right-5 top-5 border border-white/20 bg-[#03111F]/55 px-3 py-2 text-[9px] font-bold uppercase tracking-[.18em] text-white backdrop-blur-md sm:right-8 sm:top-8 sm:text-[10px]">
-              GDIW 2025 <span className="mx-1.5 text-[#D66135]">·</span> {photo.label}
+              GDIW 2025 <span className="mx-1.5 text-[#E96832]">·</span> {photo.label}
             </p>
           </div>
         );
@@ -97,20 +97,20 @@ export default function HeroFieldCarousel({ children }: { children: ReactNode })
               <h1 className="text-[3rem] leading-[.96] text-[#FFFDF8] min-[420px]:text-5xl sm:text-6xl lg:text-[72px]">
                 Learn. Build.<br />Shape Africa&apos;s<br />
                 <span className="relative inline-block">
-                  <span className="hero-highlight relative z-10 bg-gradient-to-r from-[#D66135] via-[#E09573] to-[#D66135] bg-[length:200%_100%] bg-clip-text text-transparent">AI Future.</span>
-                  <span className="hero-underline absolute bottom-0 left-0 h-[3px] w-full origin-left rounded-full bg-[#D66135]" />
+                  <span className="hero-highlight relative z-10 bg-gradient-to-r from-[#E96832] via-[#F0A07C] to-[#E96832] bg-[length:200%_100%] bg-clip-text text-transparent">AI Future.</span>
+                  <span className="hero-underline absolute bottom-0 left-0 h-[3px] w-full origin-left rounded-full bg-[#E96832]" />
                 </span>
               </h1>
               <div className="mt-8 flex flex-col gap-3 min-[420px]:flex-row min-[420px]:flex-wrap sm:gap-4">
-                <Link href="/join" className="inline-flex min-h-12 items-center justify-center border border-[#D66135] bg-[#D66135] px-6 py-3 text-center font-bold text-white shadow-[4px_4px_0_#FFFDF8] transition hover:translate-x-1 hover:translate-y-1 hover:shadow-none">Join Community →</Link>
-                <Link href="/projects" className="inline-flex min-h-12 items-center justify-center border border-white/35 px-6 py-3 text-center font-semibold text-white transition hover:border-white hover:bg-white hover:text-[#071A2D]">Explore Our Work →</Link>
+                <Link href="/join" className="inline-flex min-h-12 items-center justify-center rounded-xl bg-[#E96832] px-6 py-3 text-center font-bold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#C95327]">Join Community →</Link>
+                <Link href="/projects" className="inline-flex min-h-12 items-center justify-center rounded-xl border border-white/45 px-6 py-3 text-center font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:border-white hover:bg-white hover:text-[#071A2D]">Explore Our Work →</Link>
               </div>
             </>
           ) : (
             <>
-              <p className="eyebrow mb-5 text-[#E09573]">From the field · GDIW 2025</p>
+              <p className="eyebrow mb-5 text-[#F0A07C]">From the field · GDIW 2025</p>
               <h2 className="max-w-xl text-5xl leading-[.98] text-white sm:text-6xl lg:text-[70px]">{photographs[active - 1].headline}</h2>
-              <Link href={photographs[active - 1].href} className="mt-8 inline-flex min-h-12 items-center justify-center bg-[#D66135] px-6 py-3 font-bold text-white shadow-[4px_4px_0_#FFFDF8] transition hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
+              <Link href={photographs[active - 1].href} className="mt-8 inline-flex min-h-12 items-center justify-center rounded-xl bg-[#E96832] px-6 py-3 font-bold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#C95327]">
                 {photographs[active - 1].action} →
               </Link>
             </>
@@ -131,7 +131,7 @@ export default function HeroFieldCarousel({ children }: { children: ReactNode })
             aria-label={`${index === 0 ? "Show animated Africa map" : `Show GDIW photograph ${index}`} (${index + 1} of ${slideCount})`}
             onClick={() => setActive(index)}
             className={`h-2.5 w-2.5 rounded-full transition-all duration-300 ${
-              index === active ? "bg-[#D66135] ring-2 ring-white/70 ring-offset-2 ring-offset-transparent" : "border border-white/80 bg-transparent hover:bg-white/35"
+              index === active ? "bg-[#E96832] ring-2 ring-white/70 ring-offset-2 ring-offset-transparent" : "border border-white/80 bg-transparent hover:bg-white/35"
             }`}
           />
         ))}

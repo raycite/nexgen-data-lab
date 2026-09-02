@@ -197,7 +197,7 @@ export default function LearningCommunity() {
 
             <a
               href="/programs"
-              className="mt-7 inline-flex min-h-11 items-center text-sm font-semibold text-[#D66135] transition hover:opacity-80"
+              className="mt-7 inline-flex min-h-11 items-center text-sm font-semibold text-[#E96832] transition hover:opacity-80"
             >
               Explore all resources →
             </a>
@@ -225,7 +225,7 @@ export default function LearningCommunity() {
               {/* Upcoming Events */}
               <div className="flex items-start gap-2.5">
 
-                <div className="shrink-0 text-[#D66135]">
+                <div className="shrink-0 text-[#E96832]">
                   <CalendarIcon />
                 </div>
 
@@ -243,7 +243,7 @@ export default function LearningCommunity() {
               {/* Mentorship */}
               <div className="flex items-start gap-2.5">
 
-                <div className="shrink-0 text-[#D66135]">
+                <div className="shrink-0 text-[#E96832]">
                   <MentorshipIcon />
                 </div>
 
@@ -261,7 +261,7 @@ export default function LearningCommunity() {
               {/* Community Projects */}
               <div className="flex items-start gap-2.5">
 
-                <div className="shrink-0 text-[#D66135]">
+                <div className="shrink-0 text-[#E96832]">
                   <RocketIcon />
                 </div>
 
@@ -280,7 +280,7 @@ export default function LearningCommunity() {
 
             <a
               href="/join"
-              className="mt-7 inline-flex min-h-11 items-center text-sm font-semibold text-[#D66135] transition hover:opacity-80"
+              className="mt-7 inline-flex min-h-11 items-center text-sm font-semibold text-[#E96832] transition hover:opacity-80"
             >
               Explore Community →
             </a>

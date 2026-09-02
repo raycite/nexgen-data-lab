@@ -53,9 +53,9 @@ export default function AboutPage() {
 
       <section className="relative overflow-hidden bg-[#00102B] px-4 py-14 text-white sm:px-6 sm:py-16">
         <div className="absolute -left-24 top-10 h-72 w-72 rounded-full bg-blue-600/20 blur-3xl" />
-        <div className="absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-[#D66135]/12 blur-3xl" />
+        <div className="absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-[#E96832]/12 blur-3xl" />
         <div className="relative mx-auto max-w-5xl text-center">
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#D66135]">About NextGen Data Lab</p>
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#E96832]">About NextGen Data Lab</p>
           <h1 className="mx-auto mt-4 max-w-4xl text-3xl font-bold leading-tight sm:text-5xl">Practical AI and data science learning for African communities.</h1>
           <p className="mx-auto mt-5 max-w-3xl text-base leading-7 text-slate-300 sm:text-lg">We bring students, researchers and professionals together to learn, receive mentorship, conduct research and build useful projects. We also support responsible datasets that better represent African people and contexts.</p>
           <div className="mt-7 flex flex-wrap justify-center gap-3 text-sm font-medium text-slate-200">
@@ -72,7 +72,7 @@ export default function AboutPage() {
             <p className="mt-3 leading-7 text-blue-50">We make AI, mathematics and data science more accessible through practical learning, mentorship, collaborative research and responsible African datasets.</p>
           </article>
           <article className="rounded-2xl border border-slate-200 bg-white p-6 sm:p-8">
-            <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#D66135]">The problem</p>
+            <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#E96832]">The problem</p>
             <h2 className="mt-3 text-xl font-bold sm:text-2xl">Talent exists. Access and representation still lag behind.</h2>
             <p className="mt-3 leading-7 text-slate-600">Many aspiring practitioners lack practical training, mentors, quality datasets and meaningful projects. Limited African representation in AI data also makes many technologies less relevant locally.</p>
           </article>
@@ -107,7 +107,7 @@ export default function AboutPage() {
                       <span className="flex h-28 w-28 items-center justify-center rounded-full border border-white/30 bg-white/10 text-4xl font-bold text-white shadow-xl backdrop-blur">{member.initials}</span>
                     </div>
                   )}
-                  <span className="absolute bottom-4 left-4 rounded-full bg-[#D66135] px-3 py-1.5 text-xs font-bold text-white shadow">{member.role}</span>
+                  <span className="absolute bottom-4 left-4 rounded-full bg-[#E96832] px-3 py-1.5 text-xs font-bold text-white shadow">{member.role}</span>
                 </div>
                 <div className="p-5">
                   <div className="flex items-start justify-between gap-3">
@@ -143,8 +143,8 @@ export default function AboutPage() {
 
       <section className="px-4 pb-12 sm:px-6 sm:pb-16">
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-6 rounded-3xl bg-[#00102B] p-8 text-white sm:p-12 lg:flex-row lg:items-center">
-          <div className="max-w-2xl"><p className="text-sm font-bold uppercase tracking-[0.16em] text-[#D66135]">Join the community</p><h2 className="mt-3 text-3xl font-bold">Learn, contribute and build with us.</h2><p className="mt-4 leading-7 text-slate-300">Help create data-driven solutions that reflect the people and communities they are intended to serve.</p></div>
-          <Link href="/join" className="inline-flex min-h-12 shrink-0 items-center gap-2 rounded-full bg-[#D66135] px-6 font-semibold text-white transition hover:bg-[#B94F29]">Join NextGen Data Lab <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
+          <div className="max-w-2xl"><p className="text-sm font-bold uppercase tracking-[0.16em] text-[#E96832]">Join the community</p><h2 className="mt-3 text-3xl font-bold">Learn, contribute and build with us.</h2><p className="mt-4 leading-7 text-slate-300">Help create data-driven solutions that reflect the people and communities they are intended to serve.</p></div>
+          <Link href="/join" className="inline-flex min-h-12 shrink-0 items-center gap-2 rounded-xl bg-[#E96832] px-6 font-semibold text-white transition hover:bg-[#C95327]">Join NextGen Data Lab <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
         </div>
       </section>
 
