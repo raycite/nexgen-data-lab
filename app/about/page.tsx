@@ -51,41 +51,50 @@ export default function AboutPage() {
     <main id="main-content" className="min-h-screen bg-white text-slate-900">
       <Navbar />
 
-      <section className="relative overflow-hidden bg-[#00102B] px-4 py-14 text-white sm:px-6 sm:py-16">
-        <div className="absolute -left-24 top-10 h-72 w-72 rounded-full bg-blue-600/20 blur-3xl" />
-        <div className="absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-[#E96832]/12 blur-3xl" />
-        <div className="relative mx-auto max-w-5xl text-center">
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#E96832]">About NextGen Data Lab</p>
-          <h1 className="mx-auto mt-4 max-w-4xl text-3xl font-bold leading-tight sm:text-5xl">Practical AI and data science learning for African communities.</h1>
-          <p className="mx-auto mt-5 max-w-3xl text-base leading-7 text-slate-300 sm:text-lg">We bring students, researchers and professionals together to learn, receive mentorship, conduct research and build useful projects. We also support responsible datasets that better represent African people and contexts.</p>
-          <div className="mt-7 flex flex-wrap justify-center gap-3 text-sm font-medium text-slate-200">
-            {['Practical training', 'Mentorship', 'Research', 'African datasets'].map((item) => <span key={item} className="rounded-full border border-white/15 bg-white/5 px-4 py-2">{item}</span>)}
+      <section className="relative min-h-[430px] overflow-hidden bg-[#03111F] text-white sm:min-h-[500px]">
+        <Image
+          src="/about-nextgen-community.jpeg"
+          alt="Members of Ghana's technology community gathering at an event"
+          fill
+          priority
+          loading="eager"
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(3,17,31,.96)_0%,rgba(3,17,31,.82)_42%,rgba(3,17,31,.34)_78%,rgba(3,17,31,.52)_100%),linear-gradient(0deg,rgba(3,17,31,.48),transparent_60%)]" />
+        <div className="editorial-grid absolute inset-0 opacity-20" />
+        <div className="relative mx-auto flex min-h-[430px] max-w-[90rem] items-center px-4 py-16 sm:min-h-[500px] sm:px-6 lg:px-10">
+          <div className="max-w-3xl">
+            <p className="eyebrow text-[#F0A07C]">About NextGen Data Lab</p>
+            <h1 className="mt-5 max-w-3xl text-4xl leading-[1.02] sm:text-6xl lg:text-[72px]">Learning together.<br />Building for our context.</h1>
+            <p className="mt-6 max-w-2xl text-base leading-7 text-slate-200 sm:text-lg">A community helping students and researchers turn curiosity in mathematics, data and AI into practical skills, useful research and shared progress.</p>
           </div>
         </div>
       </section>
 
-      <section className="bg-slate-50 px-4 py-10 sm:px-6 sm:py-14">
-        <div className="mx-auto grid max-w-6xl gap-6 lg:grid-cols-2">
-          <article className="rounded-2xl bg-[#1264E8] p-6 text-white sm:p-8">
-            <p className="text-xs font-bold uppercase tracking-[0.18em] text-blue-100">Our mission</p>
-            <h2 className="mt-3 text-xl font-bold sm:text-2xl">Make technical learning accessible and relevant.</h2>
-            <p className="mt-3 leading-7 text-blue-50">We make AI, mathematics and data science more accessible through practical learning, mentorship, collaborative research and responsible African datasets.</p>
-          </article>
-          <article className="rounded-2xl border border-slate-200 bg-white p-6 sm:p-8">
-            <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#E96832]">The problem</p>
-            <h2 className="mt-3 text-xl font-bold sm:text-2xl">Talent exists. Access and representation still lag behind.</h2>
-            <p className="mt-3 leading-7 text-slate-600">Many aspiring practitioners lack practical training, mentors, quality datasets and meaningful projects. Limited African representation in AI data also makes many technologies less relevant locally.</p>
-          </article>
-        </div>
-      </section>
+      <section className="editorial-grid bg-[#FFFDF8] px-4 py-12 sm:px-6 sm:py-16">
+        <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[.95fr_1.05fr] lg:gap-16">
+          <div className="relative mx-auto w-full max-w-xl pb-7 pr-5 sm:pb-9 sm:pr-8">
+            <div className="absolute inset-x-5 inset-y-0 rounded-[2rem] bg-gradient-to-br from-[#E96832]/25 via-[#E96832]/8 to-[#1168D9]/20" />
+            <div className="relative aspect-[4/3] overflow-hidden rounded-[1.6rem] border border-[#071A2D]/10 bg-[#071A2D] shadow-[0_24px_60px_rgba(7,26,45,.16)]">
+              <Image src="/about-nextgen-community.jpeg" alt="A gathering of learners and technology practitioners in Ghana" fill sizes="(max-width: 1024px) 100vw, 48vw" className="object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#03111F]/55 via-transparent to-[#1168D9]/10" />
+            </div>
+            <div className="absolute bottom-0 right-0 rounded-2xl bg-[#071A2D] px-5 py-4 text-white shadow-xl sm:px-7 sm:py-5">
+              <p className="text-[10px] font-bold uppercase tracking-[.2em] text-[#F0A07C]">Our approach</p>
+              <p className="mt-1 text-lg font-semibold">Learn · Build · Share</p>
+            </div>
+          </div>
 
-      <section className="px-4 py-12 sm:px-6 sm:py-16">
-        <div className="mx-auto max-w-4xl">
-          <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#1264E8]">Our story</p>
-          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">From learning concepts to creating something useful</h2>
-          <div className="mt-5 space-y-4 text-base leading-7 text-slate-600">
-            <p>NextGen Data Lab began with a simple idea: learning data science and AI should lead to more than completing courses or collecting certificates. It should give people the confidence and opportunity to investigate real problems, work with real data and create something useful.</p>
-            <p>Practical experiences across AI, computer vision, environmental research and data analysis revealed both the potential of data-driven research and the barriers preventing many emerging researchers from participating. The Lab was created to make that journey more accessible, collaborative and relevant to African communities.</p>
+          <div>
+            <p className="eyebrow text-[#E96832]">Our mission</p>
+            <h2 className="mt-5 text-4xl leading-[1.05] text-[#071A2D] sm:text-5xl">Make technical learning accessible, practical and relevant.</h2>
+            <p className="mt-6 text-base leading-8 text-[#405064]">We make AI, mathematics and data science easier to understand through practical learning, mentorship, collaborative research and responsibly developed African datasets.</p>
+            <p className="mt-4 text-base leading-8 text-[#405064]">NextGen Data Lab began with a simple belief: learning should lead beyond courses and certificates. It should give people the confidence to investigate real problems, work with real data and create something useful.</p>
+            <div className="mt-7 border-l-4 border-[#E96832] bg-white px-5 py-4 shadow-[0_12px_35px_rgba(7,26,45,.08)]">
+              <p className="text-xs font-bold uppercase tracking-[.18em] text-[#1168D9]">The problem we are addressing</p>
+              <p className="mt-2 leading-7 text-slate-700">Talent is everywhere, but access to practical training, mentorship, meaningful projects and representative African data is not.</p>
+            </div>
           </div>
         </div>
       </section>
