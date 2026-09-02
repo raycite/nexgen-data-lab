@@ -195,9 +195,9 @@ export default function Hero() {
         </div>
 
         {/* Code-drawn animated Africa data network */}
-        <div className="reveal-3 relative flex flex-col items-center justify-center lg:min-h-[500px]">
+        <div className="contents">
           <HeroFieldCarousel>
-          <div className="relative h-full w-full overflow-hidden">
+          <div className="absolute right-0 top-1/2 aspect-[596/450] w-full -translate-y-1/2 overflow-hidden sm:w-[72%] lg:right-[2%] lg:w-[58%] lg:max-w-[760px]">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_64%_48%,rgba(18,100,232,.2),transparent_42%)]" />
             <svg
               viewBox="0 0 596 450"
