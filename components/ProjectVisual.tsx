@@ -25,7 +25,7 @@ export default function ProjectVisual({ project, large = false }: { project: Pro
       />
       <div className={`absolute inset-0 bg-gradient-to-br ${background} opacity-35`} />
       <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-black/20" />
-      <div className="project-light-sweep pointer-events-none absolute -inset-y-12 -left-1/2 z-10 w-1/3 rotate-12 bg-gradient-to-r from-transparent via-white/35 to-transparent blur-sm" />
+      <div className="project-light-sweep pointer-events-none absolute inset-y-0 -left-1/2 z-10 w-1/4 bg-gradient-to-r from-transparent via-white/30 to-transparent blur-sm" />
       <div className={`absolute -right-12 -top-12 h-48 w-48 rounded-full blur-3xl ${glow}`} />
       <div className="relative flex h-full min-h-[inherit] items-center justify-center p-8 text-white">
         <div className="flex flex-col items-center text-center">

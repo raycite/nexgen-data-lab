@@ -76,9 +76,9 @@ html {
 }
 
 @keyframes project-light-sweep {
-  0%, 18% { transform: translateX(-120%) rotate(12deg); opacity: 0; }
+  0%, 18% { transform: translateX(-120%); opacity: 0; }
   28% { opacity: 1; }
-  58%, 100% { transform: translateX(650%) rotate(12deg); opacity: 0; }
+  58%, 100% { transform: translateX(650%); opacity: 0; }
 }
 
 .project-light-sweep {
