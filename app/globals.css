@@ -145,4 +145,6 @@ html {
   }
 
   .reveal-1, .reveal-2, .reveal-3, .reveal-4 { opacity: 1; animation: none !important; }
+
+  .hero-field-slide { transition-duration: 0s !important; }
 }

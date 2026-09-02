@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
+import HeroFieldCarousel from "@/components/HeroFieldCarousel";
 import {
   BrainCircuit,
   ChartNoAxesCombined,
@@ -194,7 +195,7 @@ export default function Hero() {
         </div>
 
         {/* Code-drawn animated Africa data network */}
-        <div className="reveal-3 relative flex items-center justify-center lg:min-h-[500px]">
+        <div className="reveal-3 relative flex flex-col items-center justify-center lg:min-h-[500px]">
           <div className="relative aspect-[596/450] w-full max-w-[650px] overflow-hidden">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_64%_48%,rgba(18,100,232,.2),transparent_42%)]" />
             <svg
@@ -340,6 +341,7 @@ export default function Hero() {
               <BrainCircuit />
             </FloatingIcon>
           </div>
+          <HeroFieldCarousel />
         </div>
       </div>
     </section>
