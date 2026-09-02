@@ -1,5 +1,4 @@
 import type { ReactNode } from "react";
-import Link from "next/link";
 import HeroFieldCarousel from "@/components/HeroFieldCarousel";
 import {
   BrainCircuit,
@@ -155,46 +154,7 @@ export default function Hero() {
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_76%_44%,rgba(17,104,217,.22),transparent_36%),radial-gradient(circle_at_8%_92%,rgba(214,97,53,.1),transparent_28%)]" />
       <div className="pointer-events-none absolute inset-y-0 left-[7%] w-px bg-white/10" />
 
-      <div className="mx-auto grid max-w-[90rem] items-center gap-8 px-4 py-12 sm:px-6 sm:py-14 lg:min-h-[630px] lg:grid-cols-[0.86fr_1.14fr] lg:gap-8 lg:px-10">
-        {/* Left content */}
-        <div className="relative z-10 max-w-xl">
-          <p className="eyebrow reveal-1 mb-5 text-[#6EB4FF]">
-            Africa&apos;s Data &amp; AI Community
-          </p>
-
-          <h1 className="reveal-2 text-[3rem] leading-[.96] text-[#FFFDF8] min-[420px]:text-5xl sm:text-6xl lg:text-[72px]">
-            Learn. Build.
-            <br />
-            Shape Africa&apos;s
-            <br />
-
-            <span className="relative inline-block">
-              <span className="hero-highlight relative z-10 bg-gradient-to-r from-[#D66135] via-[#E09573] to-[#D66135] bg-[length:200%_100%] bg-clip-text text-transparent">
-                AI Future.
-              </span>
-
-              <span className="hero-underline absolute bottom-0 left-0 h-[3px] w-full origin-left rounded-full bg-[#D66135]" />
-            </span>
-          </h1>
-
-          <div className="reveal-3 mt-8 flex flex-col gap-3 min-[420px]:flex-row min-[420px]:flex-wrap sm:gap-4">
-            <Link
-              href="/join"
-              className="inline-flex min-h-12 items-center justify-center border border-[#D66135] bg-[#D66135] px-6 py-3 text-center font-bold text-white shadow-[4px_4px_0_#FFFDF8] transition duration-300 hover:translate-x-1 hover:translate-y-1 hover:shadow-none"
-            >
-              Join Community →
-            </Link>
-
-            <Link
-              href="/projects"
-              className="inline-flex min-h-12 items-center justify-center border border-white/35 px-6 py-3 text-center font-semibold text-white transition duration-300 hover:border-white hover:bg-white hover:text-[#071A2D]"
-            >
-              Explore Our Work →
-            </Link>
-          </div>
-        </div>
-
-        {/* Code-drawn animated Africa data network */}
+      <div className="mx-auto min-h-[630px] max-w-[90rem]">
         <div className="contents">
           <HeroFieldCarousel>
           <div className="absolute right-0 top-1/2 aspect-[596/450] w-full -translate-y-1/2 overflow-hidden sm:w-[72%] lg:right-[2%] lg:w-[58%] lg:max-w-[760px]">
