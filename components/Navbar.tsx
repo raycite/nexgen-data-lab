@@ -106,14 +106,14 @@ export default function Navbar() {
           }`}
         >
           {navigation.map((item) => (
-            <Link key={item.href} href={item.href} className="relative px-3 py-2 transition-colors after:absolute after:inset-x-3 after:bottom-0 after:h-px after:origin-left after:scale-x-0 after:bg-[#FF5C1A] after:transition-transform hover:text-[#FF5C1A] hover:after:scale-x-100">{item.label}</Link>
+            <Link key={item.href} href={item.href} className="relative px-3 py-2 transition-colors after:absolute after:inset-x-3 after:bottom-0 after:h-px after:origin-left after:scale-x-0 after:bg-[#C9572F] after:transition-transform hover:text-[#C9572F] hover:after:scale-x-100">{item.label}</Link>
           ))}
         </nav>
 
         {/* CTA */}
         <Link
           href="/join"
-          className="group hidden items-center gap-3 border border-[#071A2D] bg-[#FF5C1A] px-5 py-2.5 text-sm font-bold text-[#071A2D] shadow-[4px_4px_0_#071A2D] transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none lg:inline-flex"
+          className="group hidden items-center gap-3 border border-[#071A2D] bg-[#C9572F] px-5 py-2.5 text-sm font-bold text-white shadow-[4px_4px_0_#071A2D] transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none lg:inline-flex"
         >
           Join Us <span className="transition-transform group-hover:translate-x-1">↗</span>
         </Link>

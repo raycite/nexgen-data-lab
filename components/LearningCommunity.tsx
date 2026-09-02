@@ -208,7 +208,7 @@ export default function LearningCommunity() {
         {/* RIGHT SIDE */}
         <div
           id="community"
-          className="editorial-grid scroll-mt-16 border-[#071A2D]/15 bg-[#F4F0E7] px-4 py-12 sm:px-8 sm:py-14 lg:border-l lg:px-14"
+          className="editorial-grid scroll-mt-16 border-[#071A2D]/15 bg-[#F5F8FA] px-4 py-12 sm:px-8 sm:py-14 lg:border-l lg:px-14"
         >
           <div className="mx-auto max-w-2xl">
 

@@ -23,7 +23,7 @@ export default function WhatWeDo() {
       link: "Explore Research →",
       href: "/datasets",
       icon: Search,
-      iconColor: "text-[#FF5C1A]",
+      iconColor: "text-[#C9572F]",
     },
     {
       title: "Build",
@@ -41,12 +41,12 @@ export default function WhatWeDo() {
       link: "Join the Community →",
       href: "#community",
       icon: UsersRound,
-      iconColor: "text-[#FF5C1A]",
+      iconColor: "text-[#C9572F]",
     },
   ];
 
   return (
-    <section id="about" className="editorial-grid scroll-mt-16 border-b border-[#071A2D]/10 bg-[#F4F0E7] py-14 sm:py-16">
+    <section id="about" className="editorial-grid scroll-mt-16 border-b border-[#071A2D]/10 bg-[#F5F8FA] py-14 sm:py-16">
       <div className="mx-auto max-w-[90rem] px-4 sm:px-6 lg:px-10">
 
         {/* Heading */}
@@ -92,7 +92,7 @@ export default function WhatWeDo() {
 
                 <a
                   href={item.href}
-                  className="mt-5 inline-flex items-center border-b border-[#071A2D] pb-1 text-xs font-bold uppercase tracking-[.1em] text-[#071A2D] transition hover:border-[#FF5C1A] hover:text-[#FF5C1A]"
+                  className="mt-5 inline-flex items-center border-b border-[#071A2D] pb-1 text-xs font-bold uppercase tracking-[.1em] text-[#071A2D] transition hover:border-[#C9572F] hover:text-[#C9572F]"
                 >
                   {item.link}
                 </a>

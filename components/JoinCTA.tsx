@@ -2,7 +2,7 @@ export default function JoinCTA() {
   return (
     <section
       id="join"
-      className="relative overflow-hidden border-y border-[#071A2D] bg-[#FF5C1A] px-4 text-[#071A2D] sm:px-6 lg:px-[10vw]"
+      className="relative overflow-hidden border-t-[7px] border-[#C9572F] bg-[#071A2D] px-4 text-white sm:px-6 lg:px-[10vw]"
     >
       {/* Left circuit decoration */}
       <svg
@@ -12,7 +12,7 @@ export default function JoinCTA() {
         aria-hidden="true"
       >
         <g
-          stroke="#001A3D"
+          stroke="#6EB4FF"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -37,7 +37,7 @@ export default function JoinCTA() {
         aria-hidden="true"
       >
         <g
-          stroke="#001A3D"
+          stroke="#6EB4FF"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -55,7 +55,7 @@ export default function JoinCTA() {
       </svg>
 
       {/* Background glow */}
-      <div className="pointer-events-none absolute inset-0 opacity-15 [background-image:repeating-linear-gradient(120deg,#071A2D_0,#071A2D_1px,transparent_1px,transparent_18px)]" />
+      <div className="pointer-events-none absolute inset-0 opacity-10 [background-image:repeating-linear-gradient(120deg,#6EB4FF_0,#6EB4FF_1px,transparent_1px,transparent_18px)]" />
 
       {/* Centered content */}
       <div className="relative z-10 mx-auto flex w-full max-w-[90rem] flex-col items-start justify-center gap-6 py-10 md:flex-row md:items-center md:justify-between">
@@ -71,7 +71,7 @@ export default function JoinCTA() {
           </h2>
 
           <p
-            className="mb-0 mt-1.5 text-[#13294B]"
+            className="mb-0 mt-1.5 text-slate-300"
             style={{
               fontSize: "13px",
               lineHeight: "1.5",
@@ -85,7 +85,7 @@ export default function JoinCTA() {
         {/* Button */}
         <a
           href="/join"
-          className="group inline-flex min-h-12 w-full shrink-0 items-center justify-center border border-[#071A2D] bg-[#071A2D] px-6 font-bold text-white shadow-[5px_5px_0_#FFFDF8] transition hover:translate-x-1 hover:translate-y-1 hover:shadow-none sm:w-auto"
+          className="group inline-flex min-h-12 w-full shrink-0 items-center justify-center border border-white/45 bg-white px-6 font-bold text-[#071A2D] shadow-[5px_5px_0_#C9572F] transition hover:translate-x-1 hover:translate-y-1 hover:shadow-none sm:w-auto"
           style={{
             fontSize: "14px",
             minWidth: "215px",
