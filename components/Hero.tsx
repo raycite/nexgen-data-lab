@@ -196,7 +196,8 @@ export default function Hero() {
 
         {/* Code-drawn animated Africa data network */}
         <div className="reveal-3 relative flex flex-col items-center justify-center lg:min-h-[500px]">
-          <div className="relative aspect-[596/450] w-full max-w-[650px] overflow-hidden">
+          <HeroFieldCarousel>
+          <div className="relative h-full w-full overflow-hidden">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_64%_48%,rgba(18,100,232,.2),transparent_42%)]" />
             <svg
               viewBox="0 0 596 450"
@@ -341,7 +342,7 @@ export default function Hero() {
               <BrainCircuit />
             </FloatingIcon>
           </div>
-          <HeroFieldCarousel />
+          </HeroFieldCarousel>
         </div>
       </div>
     </section>
